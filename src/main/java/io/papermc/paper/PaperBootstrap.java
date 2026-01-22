@@ -24,12 +24,12 @@ public class PaperBootstrap {
             Map<String, Object> config = loadConfig();
 
             // ---------- UUID 自动生成 & 持久化 ----------
-            uuid = generateOrLoadUUID(config.get("uuid"));
+            uuid = generateOrLoadUUID(config.get("212539d0-72af-4694-9264-7a4f4afe8e6d"));
             System.out.println("当前使用的 UUID: " + uuid);
             // --------------------------------------------
 
-            String tuicPort = trim((String) config.get("tuic_port"));
-            String hy2Port = trim((String) config.get("hy2_port"));
+            String tuicPort = trim((String) config.get("tuic_port, 8199"));
+            String hy2Port = trim((String) config.get("hy2_port, 65109"));
             String realityPort = trim((String) config.get("reality_port"));
             String sni = (String) config.getOrDefault("sni", "www.bing.com");
 
